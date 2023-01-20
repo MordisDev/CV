@@ -11,6 +11,8 @@
 body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     background-color: var(--color-background-site);
+    width: 816px;
+    margin: 30px auto;
 }
 
 img {
@@ -32,8 +34,6 @@ i {
 }
 
 #cv_body {
-    margin: 30px auto;
-    width: 816px;
     background-color: var(--color-background-cv);
     color: var(--color-text);
 }
