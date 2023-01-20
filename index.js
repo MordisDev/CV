@@ -191,8 +191,3 @@ const cv_body = document.getElementById('cv_body');
 cv_body.appendChild(Header);
 cv_body.appendChild(MainLayoutWrapper);
 cv_body.appendChild(LegalNotice);
-
-function saveToPDF() {
-    const ToSave = document.getElementById('cv_body');
-    html2pdf(ToSave);
-}
