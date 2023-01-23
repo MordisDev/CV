@@ -150,12 +150,12 @@ i {
 
 .soft_skills > li, .interests > li {
     margin: 0.8em 0;
-    font-weight: 600;
     text-align: justify;
 }
 
 .soft_skills > li {
     font-size: 1.2em;
+    font-weight: 600;
 }
 
 .tech_stack > li {
