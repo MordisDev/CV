@@ -45,7 +45,7 @@ const sourceData = {
             "start": "05.2016",
             "end": "02.2019",
             "title": "Deliverability Engineer",
-            "company": "GetResponse S.A.",
+            "company": "GetResponse sp. z o.o.",
             "location": "Gdańsk",
             "description": [
                 "Configuration and support of mass mailing sending structure on application and server side (MySQL, PMTA)",
@@ -58,7 +58,7 @@ const sourceData = {
             "start": "12.2014",
             "end": "05.2016",
             "title": "Deliverability Manager",
-            "company": "GetResponse S.A.",
+            "company": "GetResponse sp. z o.o.",
             "location": "Gdańsk",
             "description": [
                 "Maintenance and development of mass sending infrastructure on application and server side",
@@ -72,7 +72,7 @@ const sourceData = {
             "start": "04.2013",
             "end": "12.2014",
             "title": "Privacy and Deliverability Manager",
-            "company": "GetResponse S.A.",
+            "company": "GetResponse sp. z o.o.",
             "location": "Gdańsk",
             "description": [
                 "Identification and handling of customers abusing the platform",
@@ -87,7 +87,7 @@ const sourceData = {
             "start": "01.2011",
             "end": "04.2013",
             "title": "Senior Account Manager",
-            "company": "GetResponse S.A.",
+            "company": "GetResponse sp. z o.o.",
             "location": "Gdańsk",
             "description": [
                 "Working with key customers to accommodate their marketing needs",
@@ -117,19 +117,21 @@ const sourceData = {
             school: "University of Gdansk",
         }
     ],
-    softSkills: [
-        "Good knowledge of Agile methodology",
-        "Practical knowledge of CI/CD, GIT, JIRA",
+    technicalSkills: [
+        "Good knowledge of <b>Agile</b> and <b>CI/CD</b> methodology",
+        "Practical knowledge of tools like <b>GIT</b> and <b>JIRA</b>",
         "Writing specifications and documentation",
-        "Good communication skills, technical and non-technical"
+        "Good communication skills, technical and non-technical",
+        "Completely fine with <b>remote work</b>, part or full time"
     ],
     techStack: [
         "HTML5/CSS3",
         "JavaScript",
         "TypeScript",
         "React.js",
+        "Redux",
         "Styled Components",
-        "Css-in-JS",
+        "Css/Sass/Jss",
         "SQL (MySQL)",
         "PHP",
     ],
@@ -140,14 +142,14 @@ const sourceData = {
         },
         {
             language: "English",
-            proficiency: "Proficient",
+            proficiency: "C1",
         }
     ],
     interests: [
-        "Carpentry (most furniture in my house is self made)",
-        "Lego Technic (the bigger set the better)",
-        "Games and Movies (for some time now I’m fascinated by technical aspects in those media, like story telling, character development, world creating algorithms in games, etc.)",
-        "Programming (I’m currently working on a simple app to help me organise myself in future projects, and slowly preparing myself to write my own web based game)"
+        "Carpentry",
+        "Lego Technic",
+        "Games and Movies",
+        "Programming"
     ],
     legalNotice: "I hereby give consent for my personal data included in the application to be processed for the purposes of the recruitment process in accordance with Art. 6 paragraph 1 letter a of the Regulation of the European Parliament and of the Council (EU) 2016/679 of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)."
 }

@@ -151,9 +151,9 @@ LeftColumnWrapper.appendChild(WorkExperience);
 
 // SKILLS
 
-const { softSkills } = sourceData;
+const { technicalSkills } = sourceData;
 
-RightColumnWrapper.appendChild(generateListSection("Skills", 'soft_skills', softSkills));
+RightColumnWrapper.appendChild(generateListSection("Technical Skills", 'technical_skills', technicalSkills));
 
 // TECH STACK
 
