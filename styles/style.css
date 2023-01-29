@@ -71,6 +71,7 @@ i {
     display: flex;
     flex-flow: row wrap;
     font-size: .35em;
+    font-weight: 500;
 }
 
 .personal_info .links_and_contact > li {
