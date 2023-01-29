@@ -128,9 +128,9 @@ const WorkExperience = generateSectioWithTitle("Experience");
 
 workHistory.map(workHistoryItem => {
 
-    const { start, end, title, company, location, description } = workHistoryItem;
+    const { start, end, title, company, location, description, pdfPageBreakAfter } = workHistoryItem;
     
-    const Item = generateElement('div', 'work_experience_item');
+    const Item = pdfPageBreakAfter ? generateElement('div', 'work_experience_item html2pdf__page-break') : generateElement('div', 'work_experience_item');
     Item.appendChild(generateElement('h6','position', title));
     Item.appendChild(generateElement('div','company_name', company));
 
