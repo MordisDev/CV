@@ -22,10 +22,12 @@ const sourceData = {
         {
             icon: "fa-brands fa-github",
             content: "github.com/mordisdev",
+            isLink: true,
         },
         {
             icon: "fa-brands fa-linkedin",
             content: "linkedin.com/in/irek-rybinski-85734384",
+            isLink: true,
         },
     ],
     summary: "Mid level front end developer with 4+ years of experience desiging and building web based support tools for incompany use. Specializing in React, with good knowledge of Typescript, CSS/JSS, and basics of UX design. Acomlpishments include desings and development of statistical panel, icluding UX design for data presentation, and access level management.",
@@ -33,60 +35,62 @@ const sourceData = {
         {
             start: "02.2019",
             end: "present",
-            "title": "Front-end Dev / Deliverability Engineer",
+            "title": "Deliverability Engineer / Front-end Dev",
             "company": "GetResponse S.A.",
             "location": "Gdańsk",
             "description": [
                 "Full scale development of internal tools panel in cooperation with Front-end guild for code quality and UX design consultation",
-                "Filling adviser role for other deliverability employees and helping them in their projects when needed",
+                "Filling advisor role for other deliverability team members and helping them in their projects when needed",
             ],
         },
         {
             start: "05.2016",
-            end: "02.2019",
+            end: "present",
             title: "Deliverability Engineer",
-            company: "GetResponse sp. z o.o.",
+            company: "GetResponse Sp. z o.o.",
             location: "Gdańsk",
             description: [
-                "Designed and developed basic varsion of statistical panel, that would take raw data previously managed and anylised manualy and presented them in user friendly way",
+                "Designed and developed basic version of statistical panel, that would take raw data previously managed and anylised manualy and presented them in user friendly way",
                 "Kept sending structure up to date with current technical standards by desiging and overlooking application development related to sending infrastructure",
                 "Maintained mass mailing sending structure server side",
                 "Consulting, advising and mentoring for other team members",
             ],
-            pdfPageBreakAfter: true,
+            //pdfPageBreakAfter: true,
         },
         {
             start: "12.2014",
             end: "05.2016",
             title: "Deliverability Manager",
-            company: "GetResponse sp. z o.o.",
+            company: "GetResponse Sp. z o.o.",
             location: "Gdańsk",
             description: [
                 "Designed and overlooked implementation of email traffic controll algorithm, that doubled key deliverability markers as a result",
                 "Building and maintaining working relationship with Email Service Providers by in-person representation on various conferences like M3AAWG",
                 "Maintenance and development of mass sending infrastructure on application and server side",
-                "Recruiting, consulting, advising and mentoring for other team members",
+                "Consulting, advising and mentoring team members",
+                "Being a part of recruitment team for new team members",
             ],
         },
         {
             start: "04.2013",
             end: "12.2014",
             title: "Privacy and Deliverability Manager",
-            company: "GetResponse sp. z o.o.",
+            company: "GetResponse Sp. z o.o.",
             location: "Gdańsk",
             description: [
                 "Designed and overlooked implementation of message content based anti-abuse alert system",
                 "Took part in early design stage of ML based Big Data analytics tool identifying potential abusive accounts based on subscription lists",
                 "Maintenance and development of mass sending infrastructure on application and server side",
                 "Building and maintaining working relationship with Email Service Providers by in-person representation on various conferences",
-                "Recruiting, consulting, advising and mentoring for other team members",
+                "Consulting, advising and mentoring team members",
+                "Being a part of recruitment team for new team members",
             ],
         },
         {
             start: "01.2011",
             end: "04.2013",
             title: "Senior Account Manager",
-            company: "GetResponse sp. z o.o.",
+            company: "GetResponse Sp. z o.o.",
             location: "Gdańsk",
             description: [
                 "Working with key customers to accommodate their marketing needs",
@@ -116,12 +120,18 @@ const sourceData = {
             school: "University of Gdansk",
         }
     ],
+    softSkills: [
+        "Eagerness to <b>learn</b> new things and <b>improve</b> existing ones",
+        "Critical thinking and <b>attention to details</b>",
+        "Effective <b>communication</b>, technical and non-technical",
+        "Work well with others",
+        "Fully prepared for <b>remote work</b>, part or full time"
+    ],
     technicalSkills: [
         "Good knowledge of <b>Agile</b> and <b>CI/CD</b> methodology",
         "Practical knowledge of tools like <b>GIT</b> and <b>JIRA</b>",
+        "Working with <b>legacy code</b>",
         "Writing specifications and documentation",
-        "Good communication skills, technical and non-technical",
-        "Fully prepared for <b>remote work</b>, part or full time"
     ],
     techStack: [
         "HTML5/CSS3",

@@ -35,6 +35,12 @@ i {
     margin-right: 0.4em;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+    opacity: .8;
+}
+
 #cv_body {
     background-color: var(--color-background-cv);
     color: var(--color-text);
@@ -154,12 +160,17 @@ i {
     margin-left: 1em;
 }
 
-.technical_skills > li, .interests > li {
+.skills > li, .interests > li {
     margin: 0.8em 0;
     font-size: 1.2em;
     text-align: justify;
     display: list-item;
     list-style: none;
+}
+
+.tech_stack {
+    border-top: 1px dashed var(--color-text-light);
+    padding-top: .8em;
 }
 
 .tech_stack > li {

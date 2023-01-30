@@ -15,24 +15,32 @@ function generateSectioWithTitle(title) {
     return Section;
 }
 
-function generateListItemWithIcon(icon, content) {
+function generateListItemWithIcon(icon, content, isLink) {
     const Item = document.createElement('li');
     
     const Icon = document.createElement('i');
     Icon.setAttribute('class', icon);
     Item.appendChild(Icon);
 
-    const Content = document.createElement('span');
-    Content.setAttribute('class', 'description');
-    Content.textContent = content;
+    let Content;
+    if(isLink) {
+        Content = document.createElement('a');
+        Content.setAttribute('class', 'description');
+        Content.setAttribute('href',`https://${content}`);
+        Content.setAttribute('target', '_blank');
+        Content.textContent = content;
+    } else {
+        Content = document.createElement('span');
+        Content.setAttribute('class', 'description');
+        Content.textContent = content;
+    }
+
     Item.appendChild(Content);
 
     return Item;
 }
 
-function generateListSection(title, className, listItems) {
-    
-    const Section = generateSectioWithTitle(title);
+function generateList(className, listItems) {
     const List = generateElement('ul', className);
 
     listItems.map(item => {
@@ -40,6 +48,14 @@ function generateListSection(title, className, listItems) {
         Item.innerHTML = item;
         List.appendChild(Item);
     });
+
+    return List;
+}
+
+function generateListSection(title, className, listItems) {
+    
+    const Section = generateSectioWithTitle(title);
+    const List = generateList(className, listItems);
 
     Section.appendChild(List);
 
@@ -60,7 +76,7 @@ PersonalInformation.appendChild(generateElement('h3', 'title', workTitle));
 const LinksAndContact = generateElement('ul','links_and_contact');
 contactAndLinks.map(item =>
     LinksAndContact.appendChild(
-        generateListItemWithIcon(item.icon, item.content)
+        generateListItemWithIcon(item.icon, item.content, item.isLink)
     ));
 
 PersonalInformation.appendChild(LinksAndContact);
@@ -94,32 +110,6 @@ Summary.appendChild(SummaryContent);
 
 LeftColumnWrapper.appendChild(Summary);
 
-// EDUCATION
-
-const { education } = sourceData;
-
-const Education = generateSectioWithTitle("Education");
-
-education.map(educationItem => {
-
-    const { start, end, title, school, speciality } = educationItem;
-    
-    const Item = generateElement('div', 'education_item');
-    Item.appendChild(generateElement('h5', 'title', title));
-
-    const SpecializationAndSchool = generateElement('h6', 'speciality_and_school');
-    SpecializationAndSchool.innerHTML = `${speciality}, <br /> at ${school}`;
-    Item.appendChild(SpecializationAndSchool);
-    
-    const Time = generateElement('ul', 'time_and_location');
-    Time.appendChild(generateListItemWithIcon('fa-regular fa-calendar-days', `${start} - ${end}`));
-    Item.appendChild(Time);
-
-    Education.appendChild(Item);
-});
-
-LeftColumnWrapper.appendChild(Education);
-
 // WORK EXPERIENCE
 
 const { workHistory } = sourceData;
@@ -149,17 +139,48 @@ workHistory.map(workHistoryItem => {
 
 LeftColumnWrapper.appendChild(WorkExperience);
 
-// SKILLS
+// EDUCATION
 
-const { technicalSkills } = sourceData;
+const { education } = sourceData;
 
-RightColumnWrapper.appendChild(generateListSection("Technical Skills", 'technical_skills', technicalSkills));
+const Education = generateSectioWithTitle("Education");
 
-// TECH STACK
+education.map(educationItem => {
 
-const { techStack } = sourceData;
+    const { start, end, title, school, speciality } = educationItem;
+    
+    const Item = generateElement('div', 'education_item');
+    Item.appendChild(generateElement('h5', 'title', title));
 
-RightColumnWrapper.appendChild(generateListSection("Tech Stack", 'tech_stack', techStack));
+    const SpecializationAndSchool = generateElement('h6', 'speciality_and_school');
+    SpecializationAndSchool.innerHTML = `${speciality}, <br /> at ${school}`;
+    Item.appendChild(SpecializationAndSchool);
+    
+    const Time = generateElement('ul', 'time_and_location');
+    Time.appendChild(generateListItemWithIcon('fa-regular fa-calendar-days', `${start} - ${end}`));
+    Item.appendChild(Time);
+
+    Education.appendChild(Item);
+});
+
+LeftColumnWrapper.appendChild(Education);
+
+// SOFT SKILLS
+
+const { softSkills } = sourceData;
+
+RightColumnWrapper.appendChild(generateListSection("Soft Skills", 'skills', softSkills));
+
+// TEHNICAL SKILLS
+
+const { technicalSkills, techStack } = sourceData;
+
+const TechnicalSkills = generateListSection("Technical Skills", 'skills', technicalSkills);
+const TechStack = generateList('tech_stack', techStack);
+TechnicalSkills.appendChild(TechStack);
+
+
+RightColumnWrapper.appendChild(TechnicalSkills);
 
 // LANGUAGES
 
