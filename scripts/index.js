@@ -120,7 +120,7 @@ workHistory.map(workHistoryItem => {
 
     const { start, end, title, company, location, description, pdfPageBreakAfter } = workHistoryItem;
     
-    const Item = pdfPageBreakAfter ? generateElement('div', 'work_experience_item html2pdf__page-break') : generateElement('div', 'work_experience_item');
+    const Item = generateElement('div', 'work_experience_item');
     Item.appendChild(generateElement('h6','position', title));
     Item.appendChild(generateElement('div','company_name', company));
 
@@ -131,7 +131,11 @@ workHistory.map(workHistoryItem => {
     Item.appendChild(TimeAndLocation);
 
     const JobDescription = generateElement('ul', 'description');
-    description.map(descriptionItem => JobDescription.appendChild(generateElement('li', null, descriptionItem)));
+    description.map(descriptionItem =>
+        descriptionItem === "Break"
+            ? JobDescription.appendChild(generateElement('li', 'html2pdf__page-break'))
+            : JobDescription.appendChild(generateElement('li', null, descriptionItem))
+        );
     Item.appendChild(JobDescription)
 
     WorkExperience.appendChild(Item);
