@@ -55,7 +55,7 @@ const sourceData = {
                 "Maintained mass mailing sending structure server side",
                 "Consulting, advising and mentoring for other team members",
             ],
-            //pdfPageBreakAfter: true,
+            pdfPageBreakAfter: true,
         },
         {
             start: "12.2014",
