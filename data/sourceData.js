@@ -30,7 +30,7 @@ const sourceData = {
             isLink: true,
         },
     ],
-    summary: "Mid level front end developer with 4+ years of experience desiging and building web based support tools for incompany use. Specializing in React, with good knowledge of Typescript, CSS/JSS, and basics of UX design. Acomlpishments include desings and development of statistical panel, icluding UX design for data presentation, and access level management.",
+    summary: "Mid level front end developer with 4+ years of experience desiging and building web based support tools for incompany use. Specializing in React, with good knowledge of Typescript, CSS/JSS, and basics of UX design. Accomplishments include designs and development of statistical panel, UX design for data presentation, and access level management",
     workHistory: [
         {
             start: "02.2019",
@@ -40,7 +40,7 @@ const sourceData = {
             "location": "Gdańsk",
             "description": [
                 "Full scale development of internal tools panel in cooperation with Front-end guild for code quality and UX design consultation",
-                "Filling advisor role for other deliverability team members and helping them in their projects when needed",
+                "Advisor role for other deliverability team members, including supporting them in their projects when needed",
             ],
         },
         {
@@ -50,8 +50,8 @@ const sourceData = {
             company: "GetResponse Sp. z o.o.",
             location: "Gdańsk",
             description: [
-                "Designed and developed basic version of statistical panel, that would take raw data previously managed and anylised manualy and presented them in user friendly way",
-                "Kept sending structure up to date with current technical standards by desiging and overlooking application development related to sending infrastructure",
+                "Designed and developed a basic version of statistical panel, that would take raw data previously managed and analyzed manually and present them in user-friendly way",
+                "Kept sending structure up to date with current technical standards by designing and overlooking application development related to sending infrastructure",
                 "Maintained mass mailing sending structure server side",
                 "Consulting, advising and mentoring for other team members",
             ],
