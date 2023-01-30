@@ -65,7 +65,6 @@ const sourceData = {
             description: [
                 "Designed and overlooked implementation of email traffic controll algorithm, that doubled key deliverability markers as a result",
                 "Building and maintaining working relationship with Email Service Providers by in-person representation on various conferences like M3AAWG",
-                "Break",
                 "Maintenance and development of mass sending infrastructure on application and server side",
                 "Consulting, advising and mentoring team members",
                 "Being a part of recruitment team for new team members",
