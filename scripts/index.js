@@ -131,11 +131,12 @@ workHistory.map(workHistoryItem => {
     Item.appendChild(TimeAndLocation);
 
     const JobDescription = generateElement('ul', 'description');
-    description.map(descriptionItem => 
+    description.map(descriptionItem => JobDescription.appendChild(generateElement('li', null, descriptionItem)));
+    /*description.map(descriptionItem => 
         Array.isArray(descriptionItem)
             ? JobDescription.appendChild(generateElement('li', 'html2pdf__page-break bottom_margin', descriptionItem[0]))
             : JobDescription.appendChild(generateElement('li', null, descriptionItem))
-    );
+    );*/
     Item.appendChild(JobDescription)
 
     WorkExperience.appendChild(Item);
