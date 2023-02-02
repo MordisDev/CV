@@ -30,7 +30,7 @@ const sourceData = {
             isLink: true,
         },
     ],
-    summary: "Mid level front end developer with 4+ years of experience desiging and building web based support tools for incompany use. Specializing in React, with good knowledge of Typescript, CSS/JSS, and basics of UX design. Accomplishments include designs and development of statistical panel, UX design for data presentation, and access level management",
+    summary: "Mid level front end developer with 4+ years of experience desiging and building web based support tools for incompany use. Specializing in React, with good knowledge of Typescript, CSS/JSS, and basics of UX design. Accomplishments include designs and development of statistical panel, UX design for data presentation, and access level management.",
     workHistory: [
         {
             start: "02.2019",
@@ -77,10 +77,10 @@ const sourceData = {
             company: "GetResponse Sp. z o.o.",
             location: "Gdańsk",
             description: [
-                "Designed and overlooked implementation of message content based anti-abuse alert system",
-                "Took part in early design stage of ML based Big Data analytics tool identifying potential abusive accounts based on subscription lists",
+                "Designed and overlooked implementation of message content-based anti-abuse alert system",
+                "Took part in the early design stage of ML-based Big Data analytics tool identifying potential abusive accounts based on subscription lists",
                 "Maintenance and development of mass sending infrastructure on application and server side",
-                "Building and maintaining working relationship with Email Service Providers by in-person representation on various conferences",
+                "Building and maintaining working relationships with Email Service Providers by in-person representation at various conferences",
                 "Consulting, advising and mentoring team members",
                 "Being a part of recruitment team for new team members",
             ],
@@ -94,7 +94,7 @@ const sourceData = {
             description: [
                 "Working with key customers to accommodate their marketing needs",
                 "Providing email marketing strategy advices",
-                "Fine tuning technical aspect of sending infrastructure",
+                "Fine-tuning technical aspects of sending infrastructure",
                 "Mediating between the customer and Email Service Providers to mitigate delivery issues",
             ],
         },

@@ -133,7 +133,7 @@ workHistory.map(workHistoryItem => {
     const JobDescription = generateElement('ul', 'description');
     description.map(descriptionItem => 
         Array.isArray(descriptionItem)
-            ? JobDescription.appendChild(generateElement('li', 'html2pdf__page-break', descriptionItem[0]))
+            ? JobDescription.appendChild(generateElement('li', 'html2pdf__page-break bottom_margin', descriptionItem[0]))
             : JobDescription.appendChild(generateElement('li', null, descriptionItem))
     );
     Item.appendChild(JobDescription)
@@ -154,10 +154,10 @@ education.map(educationItem => {
     const { start, end, title, school, speciality } = educationItem;
     
     const Item = generateElement('div', 'education_item');
-    Item.appendChild(generateElement('h5', 'title', title));
+    Item.appendChild(generateElement('h5', 'school', school));
 
-    const SpecializationAndSchool = generateElement('h6', 'speciality_and_school');
-    SpecializationAndSchool.innerHTML = `${speciality}, <br /> at ${school}`;
+    const SpecializationAndSchool = generateElement('h6', 'speciality');
+    SpecializationAndSchool.innerHTML = speciality;
     Item.appendChild(SpecializationAndSchool);
     
     const Time = generateElement('ul', 'time_and_location');

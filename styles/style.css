@@ -133,7 +133,7 @@ a:link, a:visited {
     border-bottom: 1px dashed var(--color-text-light);
 }
 
-.work_experience_item .position, .education_item .title {
+.work_experience_item .position, .education_item .school {
     margin-top: .6em;
     margin-bottom: .4em;
     color: var(--color-terciary);
@@ -142,7 +142,7 @@ a:link, a:visited {
     letter-spacing: .1em;
 }
 
-.work_experience_item .company_name, .education_item .speciality_and_school {
+.work_experience_item .company_name, .education_item .speciality {
     margin-top: .4em;
     margin-bottom: .6em;
     color: var(--color-main);
@@ -158,6 +158,10 @@ a:link, a:visited {
 .work_experience_item .description > li {
     display: list-item;
     margin-left: 1em;
+}
+
+.work_experience_item .description > li.bottom_margin {
+    margin-bottom: 2em;
 }
 
 .skills > li, .interests > li {
