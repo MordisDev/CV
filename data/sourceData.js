@@ -51,7 +51,7 @@ const sourceData = {
             location: "Gdańsk",
             description: [
                 "Designed and developed a basic version of statistical panel, that would take raw data previously managed and analyzed manually and present them in user-friendly way",
-                "Kept sending structure up to date with current technical standards by designing and overlooking application development related to sending infrastructure",
+                "Kept sending structure up to date with technical standards; designing and overlooking application development related to it",
                 "Maintained mass mailing sending structure server side",
                 "Consulting, advising and mentoring for other team members",
             ],
