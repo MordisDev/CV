@@ -64,7 +64,7 @@ const sourceData = {
             location: "Gdańsk",
             description: [
                 "Designed and overlooked implementation of email traffic controll algorithm, that doubled key deliverability markers as a result",
-                "Building and maintaining working relationship with Email Service Providers",
+                "Maintaining working relationship with Email Service Providers",
                 "Maintenance and development of mass sending infrastructure on application and server side",
                 "Consulting, advising and mentoring team members",
                 "Being a part of recruitment team for new team members",
