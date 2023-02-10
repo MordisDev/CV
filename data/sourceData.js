@@ -69,6 +69,7 @@ const sourceData = {
                 "Consulting, advising and mentoring team members",
                 "Being a part of recruitment team for new team members",
             ],
+            pageBreakAfter: true,
         },
         {
             start: "01.2011",
