@@ -34,7 +34,7 @@ const sourceData = {
     workHistory: [
         {
             start: "02.2019",
-            end: "present",
+            end: "01.2023",
             "title": "Deliverability Engineer / Front-end Dev",
             "company": "GetResponse S.A.",
             "location": "Gdańsk",
@@ -45,7 +45,7 @@ const sourceData = {
         },
         {
             start: "05.2016",
-            end: "present",
+            end: "01.2023",
             title: "Deliverability Engineer",
             company: "GetResponse Sp. z o.o.",
             location: "Gdańsk",
